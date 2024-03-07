@@ -1,4 +1,4 @@
-A small project that I did in early 2022. A very simple web page based in Angular. You can click on the top icon to create your profile.  You can also publish a tweet including or not a photo. I was also curious to know how to sign in with Google/Facebook. I used Firebase to implement this authentication functionality. And I did it! !
+A small project that I did in early 2022. A very simple web page based in Angular. There is a header that you can click on the top icon to create your profile.  You can also publish a tweet including or not a photo. I was also curious to know how to sign in with Google/Facebook. I used Firebase to implement this authentication functionality. And I did it! !
 
 # Openbook
 
