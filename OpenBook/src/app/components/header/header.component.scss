@@ -1,0 +1,307 @@
+.spacer {
+  flex: 1 1 auto;
+}
+/* GLOBAL CSS */
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5em;
+  font-weight: 900;
+
+}
+
+h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+p {
+  margin: 0;
+  font-size: 0.83em;
+}
+
+/* NAV MENU */
+.nav-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(4, 57, 117);
+  display: flex;
+}
+
+.nav-menu {
+  min-height: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 20% 0 20%;
+}
+
+.nav-logo {
+  flex-grow: 55;
+}
+
+.nav-spotifylogo {
+  height: 50px;
+}
+
+.nav-item {
+  flex-grow: 5;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #1ED760;
+}
+
+.nav-divider {
+  height: 20px;
+  border-right: 1px solid white;
+  flex-grow: 1;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  background-color: #2941AB;
+  width: auto;
+  height: 937px;
+}
+
+.container-image {
+  background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+  background-size: 170%;
+  background-position: 44% 7%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.container-title {
+  font-size: 140px;
+  line-height: 166px;
+  padding: 0 0 40px 40px;
+  margin-left: 250px;
+  width: 800px;
+  text-indent: -2.1em;
+  color: #1ED760;
+}
+
+.container-text {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 40px;
+  font-weight: 500;
+  color: #1ED760;
+  width: 900px;
+  text-align: center;
+}
+
+.container-button {
+  border-radius: 50px;
+  background-color: #1ED760;
+  color: #2941AB;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-color: rgb(42, 99, 165);
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 30px;
+}
+
+.footer-menu {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 0 20%;
+  margin-top: 80px;
+}
+
+.footer-logo {
+  width: 16%;
+  display: flex;
+  flex-flow: column;
+  padding: 0px 15px 0 15px;
+}
+
+.footer-column {
+  width: 16%;
+  display: flex;
+  flex-flow: column;
+  padding: 20px 15px 0 15px;
+}
+
+.footer-title {
+  color: #919496;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-item {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  padding: 3px 0 15px;
+  cursor: pointer;
+}
+
+.footer-item:hover {
+  color: #1ed760;
+}
+
+.footer-spotifylogo {
+  width: 80%;
+}
+
+.footer-divider {
+  padding: 0 20%;
+  width: 100%;
+  display: flex;
+  color: #919496;
+  justify-content: flex-end;
+}
+
+.divider-text {
+  padding-left: 5px;
+}
+
+.divider-text:hover {
+  color: #1ed760;
+}
+
+.footer-social {
+  width: 16%;
+  display: flex;
+  flex-flow: row;
+  padding: 0 15px;
+}
+
+.social-icons {
+  margin: 10px 5px 10px 5px;
+  display: flex;
+  background-color: #222326;
+  height: 50px;
+  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+
+.footer-footer {
+  color: white;
+  padding: 0 20%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.fitem {
+  color: grey;
+  margin: 0 10px;
+}
+
+.fitem:hover {
+  color: #1ed760;
+}
+
+.fitem-end {
+  text-align: right;
+  flex-grow: 50;
+  color: #919496;
+}
+
+@media (max-width: 1200px) {
+  .container-title {
+    font-size: 90px;
+    text-indent: 0em;
+    line-height: 90px;
+    width: 500px;
+    text-align: center;
+    padding: 0 0 40px 0px;
+    margin: 0;
+  }
+    
+    .container-image {
+  background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+  background-size: 153%;
+  background-position: right 40% center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .nav-item {
+    flex-grow: 5;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .footer-menu {
+    padding: 0 2%;
+  }
+
+  .footer-item {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "coffee-shop-deba1": {
+      "hosting": {
+        "openBook": [
+          "coffee-shop-deba1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "openbook-1"
+  }
+}

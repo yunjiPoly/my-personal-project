@@ -1,0 +1,45 @@
+
+<div class="nav-header">
+
+	<div class="nav-menu">
+
+      <button
+      mat-button
+      routerLink="/feed"
+      matTooltip="OpenBook Home">
+      <h1>📖 OpenBook</h1>
+    </button>
+
+		<div class="nav-logo">
+		</div>
+		<span class="nav-item">Premium</span>
+		<span class="nav-item">Support</span>
+		<span class="nav-item">Top Trends</span>
+		<span class="nav-divider"></span>
+<!--    wai-aria (aria-*) is used for people with disabilities for sound in this case-->
+    <ng-container *ngIf="user$ | async as user; else loginIcon">
+
+      <button mat-icon-button routerLink="/create" matTooltip="Become a musician">
+        <mat-icon aria-hidden="false" aria-label="Become a musician">
+          work_outline
+        </mat-icon>
+      </button>
+
+      <button mat-icon-button matTooltip="Notifications">
+        <mat-icon aria-hidden="false" aria-label="Notifications">
+          notifications_none
+        </mat-icon>
+      </button>
+
+      <app-profile-card [user]="user" (logoutClick)="logout()">
+      </app-profile-card>
+
+    </ng-container>
+    <ng-template #loginIcon>
+      <button mat-icon-button class="nav-item" (click)="login()" aria-hidden="false" aria-label="Login">
+		    Log in
+      </button>
+
+    </ng-template>
+	</div>
+</div>
