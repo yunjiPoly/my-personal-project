@@ -1,0 +1,73 @@
+<div class="container">
+    <ng-container *ngIf="userPosts$ | async as userPosts">
+      <app-feed-item
+        *ngFor="let userPost of userPosts"
+        [userPost]="userPost"
+        (purrClick)="handlePurrClick($event)"
+      >
+      </app-feed-item>
+    </ng-container>
+  </div>
+  
+
+<!--<div class="container">-->
+<!--	<div class="container-image">-->
+<!--		<div class="container-content">-->
+<!--			<h1 class="container-title">Listening is everything</h1>-->
+<!--			<p class="container-text">Millions of musicians and instruments. Yes credit card needed.</p>-->
+<!--			<span class="container-button">START</span>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+<!--<div class="footer">-->
+<!--	<div class="footer-menu">-->
+<!--		<div class="footer-logo">-->
+<!--			<img src="/assets/feed.png"/>-->
+<!--		</div>-->
+<!--		<div class="footer-column">-->
+<!--			<span class="footer-title">COMPANY</span>-->
+<!--			<span class="footer-item">About</span>-->
+<!--			<span class="footer-item">Jobs</span>-->
+<!--			<span class="footer-item">For the Record</span>-->
+<!--		</div>-->
+<!--		<div class="footer-column">-->
+<!--			<span class="footer-title">COMMUNITIES</span>-->
+<!--			<span class="footer-item">For Artists</span>-->
+<!--			<span class="footer-item">Developers</span>-->
+<!--			<span class="footer-item">Advertising</span>-->
+<!--			<span class="footer-item">Investors</span>-->
+<!--			<span class="footer-item">Vendors</span>-->
+<!--		</div>-->
+<!--		<div class="footer-column">-->
+<!--			<span class="footer-title">USEFUL LINKS</span>-->
+<!--			<span class="footer-item">Support</span>-->
+<!--			<span class="footer-item">Web Player</span>-->
+<!--			<span class="footer-item">Free Mobile App</span>-->
+<!--		</div>-->
+<!--		<div class="footer-column">-->
+<!--		</div>-->
+<!--		<div class="footer-social">-->
+<!--			<span class="social-icons"><i class="fab fa-instagram fa-2x social-icon"></i></span>-->
+<!--			<span class="social-icons"><i class="fab fa-twitter fa-2x social-icon"></i></span>-->
+<!--			<span class="social-icons"><i class="fab fa-facebook-f fa-2x social-icon"></i></span>-->
+<!--		</div>-->
+
+<!--	</div>-->
+
+<!--	<div class="footer-divider">-->
+<!--		<i class="fas fa-globe-americas"></i>-->
+<!--		<span class="divider-text">Canada</span>-->
+<!--	</div>-->
+
+<!--	<div class="footer-footer">-->
+<!--		<span class="fitem">Legal</span>-->
+<!--		<span class="fitem">Privacy Center</span>-->
+<!--		<span class="fitem">Privacy Policy</span>-->
+<!--		<span class="fitem">Cookies</span>-->
+<!--		<span class="fitem">About Ads</span>-->
+<!--		<span class="fitem">Additional CS Privacy Disclosures</span>-->
+<!--		<span class="fitem-end">© 2021 </span>-->
+<!--	</div>-->
+
+<!--</div>-->
